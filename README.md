@@ -24,9 +24,12 @@
   - assertj: 테스트 코드를 좀 더 편하게 작성하게 도와주는 라이브러리
   - spring-test: 스프링 통합 테스트 지원
 
+<hr />
+    
+##### updated: 2023.12.28 (Thr)
 
 </details>
 
 <hr />
 
-updated: 2023.12.28 (Thr)
+    updated: 2023.12.28 (Thr)
