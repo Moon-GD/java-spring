@@ -1,0 +1,30 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.2.1'
+	id 'io.spring.dependency-management' version '1.1.4'
+}
+
+group = 'MoonGD'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	sourceCompatibility = '17'
+}
+
+repositories {
+	// 의존성에 명시된 패키지를 다운 받을 위치를 명시적으로 알려주는 것
+	mavenCentral()
+}
+
+dependencies {
+	// start.spring.io 에서 추가해준 2가지 패키지 확인
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	// 스프링 프로젝트 생성될 때 함께 생성되는 테스트 패키지
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
