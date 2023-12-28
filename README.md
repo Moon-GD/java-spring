@@ -55,6 +55,65 @@
 
 <!-- 토글 구분을 위한 주석  -->
 
+<details>
+  <summary>CLI build & run build file</summary>
+
+  - 우선, FE 전용으로 썼던 PC라 Java 기본 설정이 잘 되어 있지 않았는데 아래의 과정으로 JAVA_HOME을 올바르게 바라보도록 설정했다
+  - build 할 때 java 경로 따라가야 하기 때문에 올바르게 설정하지 않으면 아래의 오류 메세지가 출력됨
+  - <details>
+      <summary>Java 경로 관련 오류 메세지 보기</summary>
+      
+      ```bash
+        "ERROR: JAVA_HOME is set to an invalid directory: '올바르지 못한 경로'. 
+        Please set the JAVA_HOME variable in your environment to match the location of your Java installation."
+      ```
+    </details>
+  - <details>
+      <summary>해결 방법</summary>
+      
+    ```shell
+        # JAVA_HOME 경로 확인  
+        $  /usr/libexec/java_home
+    
+        # .zshrc 파일에 반영하기 위해 이동
+        $ cd ~/.zshrc
+    
+        # .zshrc 파일 JAVA 쪽 설정에 아래 내용 추가
+        export JAVA_HOME=JAVA_HOME 경로
+    
+        # 터미널에 .zshrc 파일 변경 사항 즉시 반영
+        $ source ~/.zshrc
+      ```
+     </details>
+
+  - build 방법
+    ```shell
+    # build 대상이 되는 스프링 프로젝트의 루트에서
+    
+    # build
+    $ ./gradlew build
+    
+    # 빌드되면 build 폴더가 생성됨
+    
+    # jar 파일 실행
+    $ java -jar ./build/libs/jar 파일
+    
+    # ❗️ 혹시나 build 안되면 아래 명령어 중 하나 실행하기
+    ## build 결과물, 임시 파일 모두 제거
+    $ ./gradlew clean
+    
+    ## build 결과물, 임시 파일 모두 제거 이후 빌드 실행
+    $ ./gradlew clean build
+    
+    # 혹은, 로컬의 스프링이 Port 번호를 먼저 사용 중인지 확인하기
+    ```
+
+- 위의 build & run 과정을 통해 실제 호스팅에서 어떻게 배포하는 지 가늠을 잡았다 😁    
+
+</details>
+
+<!-- 토글 구분을 위한 주석  -->
+
 <hr />
 
     updated: 2023.12.28 (Thr)
