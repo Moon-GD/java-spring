@@ -23,6 +23,9 @@ dependencies {
 
 	// 스프링 프로젝트 생성될 때 함께 생성되는 테스트 패키지
 	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+
+	// hot-reloading 활용을 위해 추가
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
 }
 
 tasks.named('test') {
