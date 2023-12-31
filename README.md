@@ -161,9 +161,17 @@ html 정적으로 보는 경우 → "단순 Html 불러오기"가 출력
 
 <details>
 
-<summary>작성 예정...</summary>
+<summary>API</summary>
 
-작성 예정...
+- @ResponseBody가 표기된 controller는 최종 가공된 정보를 `viewResolver`가 아닌 `HttpMessageConverter`로 넘긴다
+- 이 때 정보의 유형에 따라 내부 converter 유형이 달라진다 (Request 헤더 값은 고려하지 않는 것으로 가정)
+  - String: String Converter
+  - Object: Json Converter
+    - 과거에는 xml도 사용되었지만, Spring에서는 Json을 기본 값으로 설정해 둠.
+
+#### 참고
+- 코드 한 줄 완성 단축키 : Command + Shift + Enter
+- 클래스 내부에서 generate 호출 단축키 : Command Enter
 
 </details>
 
