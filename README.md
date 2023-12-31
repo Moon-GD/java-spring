@@ -163,6 +163,8 @@ html 정적으로 보는 경우 → "단순 Html 불러오기"가 출력
 
 <summary>API</summary>
 
+<img src="https://github.com/Moon-GD/java-spring/assets/74173976/ccb909a3-9e33-4568-bfda-422ca9730179" alt="@ResposneBody 동작 방식" />
+
 - @ResponseBody가 표기된 controller는 최종 가공된 정보를 `viewResolver`가 아닌 `HttpMessageConverter`로 넘긴다
 - 이 때 정보의 유형에 따라 내부 converter 유형이 달라진다 (Request 헤더 값은 고려하지 않는 것으로 가정)
   - String: String Converter
