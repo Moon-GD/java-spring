@@ -128,4 +128,29 @@
 
 </details>
 
+<!-- details 태그 구분을 위한 주석 -->
+
+<details>
+<summary>2023.12.31 (Sun)</summary>
+
+<ul>
+
+<li>
+
+<details>
+
+<summary>작성 예정...</summary>
+
+작성 예정...
+
+</details>
+
+</li>
+
+<!-- li 태그 구분을 위한 주석 -->
+
+</ul>
+
+</details>
+
     updated: 2023.12.31 (Sun)
