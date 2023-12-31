@@ -139,6 +139,28 @@
 
 <details>
 
+<summary>MVC와 템플릿 엔진</summary>
+
+- 컨트롤러 인자에 @RequestParam을 활용하여 url parameter 값을 템플릿 엔진에 넘길 수 있다.
+- 타임리프 템플릿의 경우 서버 구동 없이 Html 파일을 열게 되면 동적 생성 없이 태그 내부의 값을 렌더링한다
+
+```html
+<p th:text="'name : ' + ${name}">단순 Html 불러오기</p>
+
+서버 구동한 경우 → "name : `model의 name 값`" 이 출력
+html 정적으로 보는 경우 → "단순 Html 불러오기"가 출력 
+```
+
+</details>
+
+</li>
+
+<!-- li 태그 구분을 위한 주석 -->
+
+<li>
+
+<details>
+
 <summary>작성 예정...</summary>
 
 작성 예정...
