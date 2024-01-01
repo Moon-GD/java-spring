@@ -265,6 +265,23 @@ String returnValue = (optionalString.isPresent()) ?
 
 </li>
 
+<!-- li 태그 구분을 위한 주석 -->
+
+<li>
+
+<details>
+
+<summary>회원 서비스 개발</summary>
+
+<h4>네이밍 관련</h4>
+
+- service: 비즈니스에 초점
+- repository: 원시적인 기능에 초점
+
+</details>
+
+</li>
+
 </ul>
 
 </details>
