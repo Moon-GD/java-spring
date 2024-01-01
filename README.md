@@ -294,7 +294,10 @@ String returnValue = (optionalString.isPresent()) ?
 
 <summary>회원 서비스 테스트</summary>
 
-작성 예정...
+<br />
+
+- 테스트 코드 작성이 익숙지 않다면 `given → when → then` 순서로 작성해보는 것을 추천
+- 실패 케이스에 대해서도 작성할 것
 
 </details>
 

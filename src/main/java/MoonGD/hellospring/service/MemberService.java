@@ -8,8 +8,11 @@ import java.util.List;
 import java.util.Optional;
 
 public class MemberService {
-    private final MemoryMemberRepository repository = new MemoryMemberRepository();
+    private final MemoryMemberRepository repository;
 
+    public MemberService(MemoryMemberRepository repository) {
+        this.repository = repository;
+    }
 
     /**
      * 회원가입
@@ -18,7 +21,7 @@ public class MemberService {
         // 중복 이름 방지
         repository.findByName(member.getName())
                 .ifPresent(duplicatedMember -> {
-                    throw new IllegalStateException("이미 존재하는 회원입니다");
+                    throw new IllegalStateException("이미 존재하는 회원입니다.");
                 });
 
         repository.save(member);
