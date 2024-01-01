@@ -228,6 +228,43 @@ HashMap<Long, String> store = new HashMap<>();
 
 <!-- li 태그 구분을 위한 주석 -->
 
+<li>
+
+<details>
+
+<summary>회원 레포지토리 테스트 케이스 작성</summary>
+
+- 일반적인 Test 코드 파일명 컨벤션은 postfix로 Test 붙여줌
+- 테스트 코드의 실행 순서는 보장받지 못하기 때문에 **항상 순서에 독립적으로 작성!**
+
+<h3>️새로 알게 된 것</h3>
+
+<h4>Java 8 등장 문법: Optional</h4>
+- 하나의 객체로서 빈 값에 대한 처리, 기본 값 부여 등의 작업을 수행할 수 있도록 도와줌
+- null에 비해 보다 안전한 처리가 가능해서 종종 활용됨.
+- 값이 없을 때 get()으로 값 추출을 시도하면 `NoSuchElementException` 에러 발생
+
+```java
+Optional<string> optionalString = findValue();
+
+// 기본 값 부여
+String userName = optionalString.orElse("no name").toUpperCase();
+
+// 빈 값 처리
+String returnValue = (optionalString.isPresent()) ? 
+        optionalString.get() : "Empty";
+```
+
+<br />
+
+<h4>단축키</h4>
+
+- 파일 트리 `focus`된 상태에서 Command + N: 파일 추가
+
+</details>
+
+</li>
+
 </ul>
 
 </details>
