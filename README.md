@@ -171,7 +171,7 @@ html 정적으로 보는 경우 → "단순 Html 불러오기"가 출력
   - Object: Json Converter
     - 과거에는 xml도 사용되었지만, Spring에서는 Json을 기본 값으로 설정해 둠.
 
-#### 참고
+<h4>참고</h4>
 - 코드 한 줄 완성 단축키 : Command + Shift + Enter
 - 클래스 내부에서 generate 호출 단축키 : Command Enter
 
@@ -185,4 +185,51 @@ html 정적으로 보는 경우 → "단순 Html 불러오기"가 출력
 
 </details>
 
-    updated: 2023.12.31 (Sun)
+<!-- details 태그 구분을 위한 주석 -->
+
+<details>
+
+<summary>2024.01.01 (Mon)</summary>
+
+<ul>
+
+<li>
+
+<details>
+
+<summary>회원 도메인과 레포지토리 만들기</summary>
+
+<h3>처음 접했던 개념</h3>
+
+- Domain: 비즈니스 로직, DB 상호작용 등에 활용될 데이터의 형태를 추상화하여 모아둔 곳
+- Repository: DB 상호작용에 필요한 구현체를 정의한 interface와 해당 interface를 구현한 class가 존재하는 곳
+
+<h3>⁉️ 궁금했던 점 해결</h3>
+
+- 메모리 맵 생성할 때 1번 방식으로 하는 이유
+
+```java
+import java.util.HashMap;
+import java.util.Map;
+
+// 1번
+Map<Long, String> store = new HashMap<>();
+
+// 2번
+HashMap<Long, String> store = new HashMap<>();
+```
+
+→ 1번 방식의 경우 상위 클래스를 참조하기에 필요에 따라 HashMap이 아닌 다른 Map으로 교체 가능 <br />
+→ 즉, HashMap으로 `store 변수`를 생성할 경우 상대적으로 유연성이 떨어지고 하위 클래스로의 의존성이 높아짐. 따라서, 일반적으로 1번 형태를 선호 
+
+</details>
+
+</li>
+
+<!-- li 태그 구분을 위한 주석 -->
+
+</ul>
+
+</details>
+
+    updated: 2024.01.01 (Mon)
