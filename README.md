@@ -204,6 +204,8 @@ html 정적으로 보는 경우 → "단순 Html 불러오기"가 출력
 - Domain: 비즈니스 로직, DB 상호작용 등에 활용될 데이터의 형태를 추상화하여 모아둔 곳
 - Repository: DB 상호작용에 필요한 구현체를 정의한 interface와 해당 interface를 구현한 class가 존재하는 곳
 
+<br />
+
 <h3>⁉️ 궁금했던 점 해결</h3>
 
 - 메모리 맵 생성할 때 1번 방식으로 하는 이유
@@ -233,6 +235,8 @@ HashMap<Long, String> store = new HashMap<>();
 <details>
 
 <summary>회원 레포지토리 테스트 케이스 작성</summary>
+
+<br />
 
 - 일반적인 Test 코드 파일명 컨벤션은 postfix로 Test 붙여줌
 - 테스트 코드의 실행 순서는 보장받지 못하기 때문에 **항상 순서에 독립적으로 작성!**
@@ -277,6 +281,20 @@ String returnValue = (optionalString.isPresent()) ?
 
 - service: 비즈니스에 초점
 - repository: 원시적인 기능에 초점
+
+</details>
+
+</li>
+
+<!-- li 태그 구분을 위한 주석 -->
+
+<li>
+
+<details>
+
+<summary>회원 서비스 테스트</summary>
+
+작성 예정...
 
 </details>
 
