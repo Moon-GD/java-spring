@@ -2,14 +2,18 @@ package MoonGD.hellospring.service;
 
 import MoonGD.hellospring.domain.Member;
 import MoonGD.hellospring.repository.MemoryMemberRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
+@Service
 public class MemberService {
     private final MemoryMemberRepository repository;
 
+    @Autowired
     public MemberService(MemoryMemberRepository repository) {
         this.repository = repository;
     }
