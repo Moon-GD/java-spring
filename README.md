@@ -353,6 +353,20 @@ String returnValue = (optionalString.isPresent()) ?
 
 </li>
 
+<!-- details 태그 구분을 위한 주석 -->
+
+<li>
+
+<details>
+
+<summary>자바 코드로 직접 스프링 빈 등록하기</summary>
+
+- 작성 예정...
+
+</details>
+
+</li>
+
 </ul>
 
 </details>
