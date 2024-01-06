@@ -307,4 +307,30 @@ String returnValue = (optionalString.isPresent()) ?
 
 </details>
 
-    updated: 2024.01.01 (Mon)
+<!-- details 태그 구분을 위한 주석 -->
+
+<details>
+
+<summary>2024.01.06 (Sat)</summary>
+
+<ul>
+
+<li>
+
+<details>
+
+<summary>컴포넌트 스캔과 자동 의존관계 설정</summary>
+
+
+
+</details>
+
+</li>
+
+</ul>
+
+</details>
+
+<hr />
+
+    updated: 2024.01.06 (Mon)
